@@ -38,6 +38,9 @@ client.on("message", message => {
 
 });
 
+client.on("guildMemberAdd", function(member) {
+    member.addRole(member.guild.roles.find("name", "Membro"));
+
 
 client.login(config.token)
 
