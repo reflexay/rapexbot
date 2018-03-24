@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {   
 
-  const m = await message.channel.send({"embed": {
+message.channel.send({"embed": {
     "title": "Divulgador",
     "description": "Para nossos divulgadores, setaremos vips! então crie um link eterno e divulgue! a cada 30 pessoas que você convidar iremos lhe setar um vip de 7 dias!",
     "url": "",

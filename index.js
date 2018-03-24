@@ -8,7 +8,6 @@ const YTDL = require ("ytdl-core");
 const moment = require('moment');
 moment.locale('pt-BR');   
 const config = require('./config.json');
-var database = require("./database.js");
 var nicknames = require('nicknames');
 const fs = require('fs');
 
@@ -68,6 +67,19 @@ client.on("message", message => {
 
 });
 
+client.on("message", async message => {
+ 
+    if(message.author.bot) return;
+   
+    if(message.content.indexOf(config.prefix) !== 0) return;
+   
+    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
+   
+    client.on("guildMemberAdd", function(member) {
+      client.guilds.get(member.guild.id).members.get(member.id).addRole(member.guild.roles.find("name", "Membro").id)
+    })})
+
 
 client.login(config.token)
 
@@ -96,7 +108,7 @@ client.on("ready", () => {
     }
     
     const membrosNomes = string
-    var statusIDO = ["idle", "dnd", "online", ]
+    var statusIDO = ["dnd", ]
 
     console.log(`Conectado !`)
     setTimeout(function() {
@@ -105,7 +117,7 @@ client.on("ready", () => {
     client.user.setPresence({ game: { name: `o som das espadas.`, type: 2 } })
     client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     setInterval(() => {
-        client.user.setPresence({ game: { name: `o som das espadas.`, type: 2 } })
+        client.user.setPresence({ game: { name: `no RapexMC`, type: 0 } })
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     }, 1 * 60 * 1000)
     

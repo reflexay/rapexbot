@@ -12,7 +12,7 @@ let reason = args.slice(1).join(' ');
 if(!reason)
   return message.reply("Por favor, indique um motivo para a expulsão");
 
-await member.kick(reason)
+member.kick(reason)
   .catch(error => message.reply(`Sorry ${message.author} não posso expulsar, Error: ${error}`));
   message.delete().catch(O_o=>{}); 
   client.guilds.get("422039606330916874").channels.get("422063694009073675").send({"embed": {
