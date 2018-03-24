@@ -107,7 +107,7 @@ client.on("ready", () => {
     setInterval(() => {
         client.user.setPresence({ game: { name: `no RapexMC`, type: 0 } })
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
-    }, 1 * 60 * 1000)
+    }, 1 * 60 * 60)
     
 });
 
