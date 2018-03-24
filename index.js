@@ -81,7 +81,7 @@ client.on("message", async message => {
    
     client.on("guildMemberAdd", function(member) {
       client.guilds.get(member.guild.id).members.get(member.id).addRole(member.guild.roles.find("name", "Membro").id)
-    })})
+    })})})
 
 
 client.login(config.token)
