@@ -4,6 +4,7 @@ const client = new Discord.Client({
     autoReconnect: true,
     max_message_cache: 0
 });
+const PORT = process.env.PORT || 5000
 const YTDL = require ("ytdl-core");
 const moment = require('moment');
 moment.locale('pt-BR');   
