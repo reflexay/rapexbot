@@ -10,7 +10,7 @@ let reason = args.slice(1).join(' ');
 if(!reason)
   return message.reply("Por favor, indique um motivo para o mute");
 
-  member.guild.members.get(member.id).addRole(member.guild.roles.find("name", "Mutado").id);
+  member.guild.members.get(member.id).addRole(member.guild.roles.find("name", "Muted").id);
   member.guild.members.get(member.id).removeRole(member.guild.roles.find("name", "Membro").id);
   message.delete().catch(O_o=>{});
   client.guilds.get("422039606330916874").channels.get("422063694009073675").send({"embed": {
