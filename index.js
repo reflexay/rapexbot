@@ -96,7 +96,7 @@ client.on("ready", () => {
 
     
     const membrosNomes = string
-    var statusIDO = ["dnd", ]
+    var statusIDO = ["dnd" , "online" , ]
 
     console.log(`Conectado !`)
     setTimeout(function() {
@@ -105,9 +105,9 @@ client.on("ready", () => {
     client.user.setPresence({ game: { name: `o som das espadas.`, type: 2 } })
     client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     setInterval(() => {
-        client.user.setPresence({ game: { name: `no RapexMC`, type: 0 } })
+        client.user.setPresence({ game: { name: `um HG no Rapex`, type: 0 } })
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
-    }, 1 * 60 * 60)
+    }, 1 * 60 * 1000)
     
 });
 
