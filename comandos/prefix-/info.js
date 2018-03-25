@@ -2,7 +2,7 @@ exports.run = (client, message, args) => {
 
 message.channel.send({"embed": {
         "title": "Informações",
-        "description": `IP: Rapexmc.com.br\nTwitter: https://twitter.com/rapexmc\nInvite eterno: https://discord.gg/KW8f5Ep\nUsuarios no discord: ${client.users.size -1}`,
+        "description": `IP: Rapexmc.com.br\nTwitter: https://twitter.com/rapexmc\nInvite eterno: https://discord.gg/KW8f5Ep\nUsuarios no discord: ${client.users.size -1}\nUsuarios online: ${client.users}`,
         "url": "",
         "color": 4437732,
         "timestamp": new Date(),
