@@ -12,7 +12,6 @@ exports.run = (client, message, args) => {
     message.delete().catch(O_o=>{});
   
     client.guilds.get("422039606330916874").channels.get("422077585338400799").send({"embed": {
-        "title": "RapexSTAFF",
         "description": "",
         "url": "",
         "color": 4437732,
@@ -35,12 +34,12 @@ exports.run = (client, message, args) => {
         "fields": [
     
           {
-            "name": "Staff",
+            "name": "Usuario",
             "value": `${member.user}`,
             "inline": true
           },
           {
-            "name": "Foi para o cargo",
+            "name": "Cargo na equipe",
             "value": `${reason}`,
             "inline": true
           }
