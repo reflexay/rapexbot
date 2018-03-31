@@ -143,6 +143,12 @@ client.on("message", message => {
         case "parar":
         if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
         break;
+            
+            
+      default:
+      if(message.guild.members.get(message.author.id).roles.find("name" , "Sem permissão"))    {   
+        message.delete();
+    }
 }
     
 
