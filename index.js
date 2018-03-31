@@ -145,11 +145,7 @@ client.on("message", message => {
         break;
             
             
-      default:
-      if(message.guild.members.get(message.author.id).roles.find("name" , "Sem permissão"))    {   
-        message.delete();
-    }
-}
+}})
     
 
     
