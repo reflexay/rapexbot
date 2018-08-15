@@ -2,7 +2,7 @@ exports.run = (client, message, args) => {
 
 message.channel.send({"embed": {
         "title": "Informações",
-        "description": `Somos um servidor de minecraft de PvP/MiniGames, e prezamos pela qualidade.\n\nIP: EM BREVE!\nTwitter: https://twitter.com/rapexmc\nInvite eterno: https://discord.gg/KW8f5Ep\nUsuarios no discord: ${client.users.size -1}\nRequisitos YT:\nYoutuber: 2000 Subs + Feedback\nPro: 1000 Subs + Feedback\n\nCaso tenha alguma duvida, fale com a staff.`,
+        "description": `Somos um servidor de minecraft de PvP/MiniGames, e prezamos pela qualidade.\n\nIP: EM BREVE!\nTwitter: https://twitter.com/ImSkorped\nInvite eterno: https://discord.gg/c3aF9XX\nUsuarios no discord: ${client.users.size -1}\nRequisitos YT:\nYoutuber: 2000 Subs + Feedback\nPro: 1000 Subs + Feedback\n\nCaso tenha alguma duvida, fale com a staff.`,
         "url": "",
         "color": 4437732,
         "timestamp": new Date(),
