@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
           if(!sugest)
             return message.reply("Por favor, me diga qual a sugestão que você tem.");
         
-          client.guilds.get("422039606330916874").channels.get("422583562521542657").send({"embed": {
+          client.guilds.get("475799997779148832").channels.get("479118638411153409").send({"embed": {
               "title": "RapexSugestões",
               "description": "Chegou uma nova sugestão",
               "url": "",
