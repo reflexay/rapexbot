@@ -11,7 +11,7 @@ exports.run = (client, message, args) => {
     return message.reply("Por favor, indique um cargo");
     message.delete().catch(O_o=>{});
   
-    client.guilds.get("422039606330916874").channels.get("422077585338400799").send({"embed": {
+    client.guilds.get("475799997779148832").channels.get("479119250183815169").send({"embed": {
         "description": "",
         "url": "",
         "color": 4437732,
