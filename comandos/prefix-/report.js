@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
     return message.reply("Por favor, indique um motivo para o report");
     message.delete().catch(O_o=>{});
   
-    client.guilds.get("422039606330916874").channels.get("422440572352200706").send("@everyone",{
+    client.guilds.get("475799997779148832").channels.get("479118897174544388").send("@everyone"{
       "content": "@everyone",
       "embed": {
                 "title": "RapexReports",
