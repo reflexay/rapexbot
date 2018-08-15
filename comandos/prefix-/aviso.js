@@ -7,7 +7,7 @@ let aviso = args.slice(0).join(' ');
 if(!aviso)
 return message.reply("Por favor, me diga qual aviso irei dar.");
 message.delete().catch(O_o=>{}); 
-client.guilds.get("422039606330916874").channels.get("422063665735532544").send("@everyone",{embed: {
+client.guilds.get("475799997779148832").channels.get("479118538154442772").send("@everyone",{embed: {
   color: 3447003,
   author: {
     name: "RapexAvisos",
