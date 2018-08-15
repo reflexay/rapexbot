@@ -15,7 +15,7 @@ if(!reason)
 member.ban(reason)
   .catch(error => message.reply(`Sorry ${message.author} não posso banir, Error: ${error}`));
   message.delete().catch(O_o=>{}); 
-  client.guilds.get("422039606330916874").channels.get("422063694009073675").send({"embed": {
+  client.guilds.get("475799997779148832").channels.get("479118201150636034").send({"embed": {
       "title": "RapexPunições",
       "description": "Um usuario foi punido.",
       "url": "",
